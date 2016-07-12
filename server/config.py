@@ -1,3 +1,5 @@
+import os
+
 UPLOAD_FOLDER = '/home/edb/test_html_server/app/uploaded_imgs/img/'
 UPLOAD_FOLDER2 = '/home/edb/test_html_server/app/uploaded_imgs/thumb/'
 
@@ -7,7 +9,7 @@ class Config(object):
     MAIL_SERVER = ''
     MAIL_PORT = 587
     MAIL_USE_SSL = False
-    SECRET_KEY= ''
+    SECRET_KEY= os.urandom(24)
     # change email information as needed
     MAIL_USE_TLS = True
     MAIL_USERNAME = ''
